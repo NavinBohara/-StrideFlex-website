@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrideFlex - Made for India 🇮🇳</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>StrideFlex</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount" id="cartTotal">₹0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <i class="fas fa-credit-card"></i> Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Banner Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Walk with Confidence</h1>
+                <div class="made-for-india-badge">
+                    <span>Made for India 🇮🇳</span>
+                </div>
+                <p class="hero-tagline">Experience the perfect blend of comfort, style, and durability designed specifically for Indian roads and lifestyle.</p>
+                <button class="cta-button">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="/Users/navinbohara/Downloads/MIS_Project/Gemini_Generated_Image_269a10269a10269a.png" alt="StrideFlex Hero Shoe">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Premium Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_9v1zkg9v1zkg9v1z.png" alt="StrideFlex Grey Green Runner">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Grey Green Runner</h3>
+                        <p>Breathable grey mesh with neon green accents. Perfect for daily running and walking with superior comfort.</p>
+                        <div class="product-price">
+                            <span class="price">₹1,599</span>
+                            <span class="original-price">₹2,299</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="Grey Green Runner" data-price="1599" data-image="Gemini_Generated_Image_9v1zkg9v1zkg9v1z.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_qq51bxqq51bxqq51.png" alt="StrideFlex Black Red Classic">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Red Classic</h3>
+                        <p>Classic black sneaker with vibrant red accents. Retro athletic design with modern comfort technology.</p>
+                        <div class="product-price">
+                            <span class="price">₹1,799</span>
+                            <span class="original-price">₹2,499</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="Black Red Classic" data-price="1799" data-image="Gemini_Generated_Image_qq51bxqq51bxqq51.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_f13h5pf13h5pf13h.png" alt="StrideFlex Black White Urban">
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Black White Urban</h3>
+                        <p>Modern black mesh with white midsole. Perfect for urban lifestyle with breathable comfort and sleek design.</p>
+                        <div class="product-price">
+                            <span class="price">₹1,899</span>
+                            <span class="original-price">₹2,699</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="Black White Urban" data-price="1899" data-image="Gemini_Generated_Image_f13h5pf13h5pf13h.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_6f90s06f90s06f90.png" alt="StrideFlex Black Red WalkHero">
+                        <div class="product-badge">Trending</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Black Red WalkHero</h3>
+                        <p>Comfort-focused walking shoe with red accents and air cushion technology. Ideal for long walks and daily comfort.</p>
+                        <div class="product-price">
+                            <span class="price">₹1,399</span>
+                            <span class="original-price">₹1,999</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="Black Red WalkHero" data-price="1399" data-image="Gemini_Generated_Image_6f90s06f90s06f90.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_8zs3xp8zs3xp8zs3.png" alt="StrideFlex White Blue Sport">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>White Blue Sport</h3>
+                        <p>Clean white design with royal blue accents. Classic athletic silhouette with modern comfort and breathability.</p>
+                        <div class="product-price">
+                            <span class="price">₹1,699</span>
+                            <span class="original-price">₹2,399</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="White Blue Sport" data-price="1699" data-image="Gemini_Generated_Image_8zs3xp8zs3xp8zs3.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_q4rbheq4rbheq4rb.png" alt="StrideFlex Grey Green Performance">
+                        <div class="product-badge">Elite</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Grey Green Performance</h3>
+                        <p>High-performance athletic shoe with neon green accents and air cushion technology. Built for speed and comfort.</p>
+                        <div class="product-price">
+                            <span class="price">₹2,299</span>
+                            <span class="original-price">₹3,299</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="Grey Green Performance" data-price="2299" data-image="Gemini_Generated_Image_q4rbheq4rbheq4rb.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Gemini_Generated_Image_o99egoo99egoo99e.png" alt="StrideFlex Lifestyle Collection">
+                        <div class="product-badge">Lifestyle</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lifestyle Collection</h3>
+                        <p>Versatile white sneakers with blue accents. Perfect for campus life, casual outings, and everyday comfort.</p>
+                        <div class="product-price">
+                            <span class="price">₹1,299</span>
+                            <span class="original-price">₹1,899</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-name="Lifestyle Collection" data-price="1299" data-image="Gemini_Generated_Image_o99egoo99egoo99e.png">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Made for India Section -->
+    <section class="made-for-india-section">
+        <div class="container">
+            <div class="made-for-india-content">
+                <div class="india-flag">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Indian Flag" class="flag-image">
+                </div>
+                <div class="made-for-india-text">
+                    <h2>Made for India 🇮🇳</h2>
+                    <p>Every step you take in StrideFlex is a step towards supporting Indian craftsmanship, innovation, and the spirit of 'Make in India'. Our shoes are designed, developed, and manufactured right here in India, ensuring quality that meets global standards while being accessible to every Indian.</p>
+                    <div class="indian-values">
+                        <div class="value-item">
+                            <span class="value-icon">🏭</span>
+                            <span>Made in India</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💪</span>
+                            <span>Indian Strength</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🌟</span>
+                            <span>Global Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why StrideFlex Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why StrideFlex?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather"></i>
+                    </div>
+                    <h3>Lightweight Comfort</h3>
+                    <p>Our shoes are designed with advanced lightweight materials that provide exceptional comfort for long hours of wear, perfect for Indian lifestyle.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium quality footwear at prices that won't break the bank. We believe everyone deserves comfortable, stylish shoes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Designed for Indian Roads</h3>
+                    <p>Specially engineered to handle the diverse terrain of Indian roads, from city streets to rural pathways.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Offer Banner Section -->
+    <section id="offers" class="offer">
+        <div class="offer-banner">
+            <div class="banner-background">
+                <div class="banner-pattern"></div>
+                <div class="banner-glow"></div>
+            </div>
+            <div class="banner-content">
+                <div class="banner-left">
+                    <div class="offer-badge">
+                        <span class="badge-text">🔥 FLASH SALE</span>
+                    </div>
+                    <h2 class="banner-title">MEGA DISCOUNT</h2>
+                    <h3 class="banner-subtitle">Up to 60% OFF</h3>
+                    <p class="banner-description">Limited time offer on premium StrideFlex footwear. Grab your favorite pair before the offer ends!</p>
+                    <div class="banner-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free Express Shipping</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>1 Year Warranty</span>
+                        </div>
+                    </div>
+                    <button class="banner-cta">
+                        <i class="fas fa-shopping-cart"></i>
+                        SHOP NOW
+                    </button>
+                </div>
+                <div class="banner-center">
+                    <div class="banner-image">
+                        <img src="Gemini_Generated_Image_bimvbimvbimvbimv.png" alt="Premium StrideFlex Sneakers" class="banner-shoe-image">
+                        <div class="image-overlay">
+                            <div class="discount-badge">-60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-right">
+                    <div class="countdown-container">
+                        <div class="countdown-header">
+                            <i class="fas fa-clock"></i>
+                            <h4>Offer Ends In:</h4>
+                        </div>
+                        <div class="countdown">
+                            <div class="countdown-item">
+                                <span id="days">00</span>
+                                <span class="label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="hours">00</span>
+                                <span class="label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">00</span>
+                                <span class="label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds">00</span>
+                                <span class="label">Seconds</span>
+                            </div>
+                        </div>
+                        <div class="countdown-footer">
+                            <p>⏰ Hurry! Limited Stock Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive offers, new product launches, and style tips.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Fashion Street, Mumbai, Maharashtra 400001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@strideflex.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StrideFlex</h3>
+                    <p>Premium comfort footwear made for India. Walk with confidence, stride with style.</p>
+                    <div class="made-in-india">
+                        <span>Made in India 🇮🇳</span>
+                    </div>
+                    <div class="proud-indian">
+                        <span>Proudly Indian 🇮🇳</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StrideFlex. All rights reserved. | Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
