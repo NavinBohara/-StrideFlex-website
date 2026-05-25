@@ -26,7 +26,7 @@ https://your-project-link.netlify.app
 ### Homepage
 
 ```md
-![Homepage](screenshots/homepage.png)
+![Homepage](https://github.com/NavinBohara/-StrideFlex-website/blob/main/Homepage.png)
 ```
 
 ### Products Section
