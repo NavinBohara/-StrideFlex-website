@@ -12,7 +12,7 @@ Designed with a modern Indian ecommerce style, the website works smoothly across
 
 ## 🚀 Live Demo
 
-🔗 https://your-project-link.netlify.app
+🔗 (https://strideflex.netlify.app/)
 
 ---
 
